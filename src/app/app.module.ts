@@ -13,10 +13,18 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { environment } from 'src/environments/environment';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { UserService } from './services/user.service';
+import { UsersComponent } from './components/users/users.component';
+import { UsersComponent as UsersContainerComponent } from './containers/users/users.component';
+import { UserComponent } from './containers/user/user.component';
+import { UserDetailsComponent } from './components/user-details/user-details.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UsersComponent,
+    UsersContainerComponent,
+    UserComponent,
+    UserDetailsComponent,
   ],
   imports: [
     BrowserModule,
