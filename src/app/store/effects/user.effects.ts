@@ -7,6 +7,7 @@ import { map, withLatestFrom, switchMap } from 'rxjs/operators';
 import { of } from 'rxjs';
 import { IUserHttp } from 'src/app/models/http-models/user-http.interface';
 import { UserService } from 'src/app/services/user.service';
+import { selectUserList } from '../selectors/user.selector';
 
 @Injectable()
 export class UserEffects {
